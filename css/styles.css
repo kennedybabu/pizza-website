@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 18px;
+}
+
+.hero {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: transparent;
+}
+
+body > section > nav > a {
+    margin-left: 3rem;
+    color: black;    
+}
+
+
+#navbarNavAltMarkup > div > a {
+    color: black;
+    margin-right: 3rem;
+    transition: all ease-in-out .5s;
+}
+
+#navbarNavAltMarkup > div > a:hover {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
