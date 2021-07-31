@@ -20,6 +20,7 @@ html {
 
 body {
     font-size: 18px;
+    padding: 1rem;
 }
 
 .hero {
@@ -74,11 +75,73 @@ body > section > nav > a {
 }
 
 .special-offers {
+    text-align: center;
     min-height: 100vh;
+    margin-top: 1rem;
     padding: 2rem;
     max-width: 100vw;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgba(255, 255, 255, 0.76)), url(https://images.unsplash.com/photo-1572785031839-8d006462dcd4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1839&q=80);
+    background-image: linear-gradient(to bottom, rgba(177, 177, 177, 0.904), rgba(0, 0, 0, 0.614)), url(https://images.unsplash.com/photo-1572785031839-8d006462dcd4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1839&q=80);
+}
+
+.offer-heading h3{
+    text-decoration: underline var(--red);
+}
+
+.offers {
+    gap: 1rem
+}
+
+.card {
+    height: 400px;
+    margin-right: 1rem;
+    text-align: center;
+    padding: 0;
+}
+
+.top {
+    height: 70%;
+}
+
+.bottom {
+    height: 30%;
+}
+
+.bottom h6 {
+    margin-top: 2rem;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: var(--black);
+    transition: all ease .3s;
+}
+
+.bottom a:hover {
+    background-color: var(--black);
+    padding: .4rem .7rem;
+    color: var(--white);
+}
+
+.top {
+    background-position: center;
+    background-size: cover;
+}
+
+.one .top {
+    background-image: url(https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=414&q=80);
+}
+
+.two .top {
+    background-image: url(https://images.unsplash.com/photo-1593246049226-ded77bf90326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80);
+}
+
+.three .top {
+    background-image: url(https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);
+}
+
+.four .top {
+    background-image: url(https://images.unsplash.com/photo-1617424771170-d333ef3d93d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80);
 }
 
