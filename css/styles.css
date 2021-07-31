@@ -90,14 +90,20 @@ body > section > nav > a {
 }
 
 .offers {
-    gap: 1rem
+    gap: 1.5rem
 }
 
 .card {
     height: 400px;
     margin-right: 1rem;
     text-align: center;
+    min-width: 269px;
     padding: 0;
+    transition: transform  ease .2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .top {
@@ -127,6 +133,8 @@ body > section > nav > a {
 .top {
     background-position: center;
     background-size: cover;
+    border-radius: 3px 3px 0 0;
+
 }
 
 .one .top {
@@ -143,5 +151,24 @@ body > section > nav > a {
 
 .four .top {
     background-image: url(https://images.unsplash.com/photo-1617424771170-d333ef3d93d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80);
+}
+
+.order {
+    min-height: 100vh;
+    margin-top: 1rem;
+    /* background-color: crimson; */
+    display: flex;
+}
+
+.order-right {
+    flex: 1;
+    background-color: cyan;
+}
+
+.order-left {
+    background-color: darkblue;
+    flex: 1.5;
+    /* clip-path: polygon(0 0, 68% 0, 40% 100%, 0% 100%) */
+    clip-path: polygon(0 0, 91% 0, 70% 100%, 0% 100%);
 }
 
