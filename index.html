@@ -42,7 +42,7 @@
                         </div>
                         <div class="bottom">
                             <h6>Pepporoni Pizza</h6>
-                            <a href="#">Order Now</a>
+                            <a href="#form">Order Now</a>
                         </div>
                     </div>
     
@@ -51,8 +51,8 @@
                             
                         </div>
                         <div class="bottom">
-                            <h6>Hawaiian Pizaa</h6>
-                            <a href="#">Order Now</a>
+                            <h6>Hawaiian Pizza</h6>
+                            <a href="#form">Order Now</a>
                         </div>
                     </div>
     
@@ -62,7 +62,7 @@
                         </div>
                         <div class="bottom">
                             <h6>Margherita Pizza</h6>
-                            <a href="#">Order Now</a>
+                            <a href="#form">Order Now</a>
                         </div>
                     </div>
     
@@ -72,7 +72,7 @@
                         </div>
                         <div class="bottom">
                             <h6>BBQ Chicken</h6>
-                            <a href="#">Order Now</a>
+                            <a href="#form">Order Now</a>
                         </div>
                     </div>
     
@@ -83,7 +83,39 @@
 
     <section class="order">
         <div class="order-left"></div>
-        <div class="order-right"></div>
+        <div class="order-right">
+            <div class="form-container">
+                <form action="#" id="form">
+                    <div class="col">
+                        <label for="type">Pizza Type</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose Pizza Type...</option>
+                            <option value="large">Pepporoni Pizza</option>
+                            <option value="medium">Hawaiian Pizza</option>
+                            <option value="small">Margherita Pizza</option>
+                            <option value="small">BBQ Chicken</option>
+                        </select>
+
+                        <label for="type">Pizza Size</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose size...</option>
+                            <option value="large">large</option>
+                            <option value="medium">Medium</option>
+                            <option value="small">Small</option>
+                        </select>
+
+                        <label for="type">Crust</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose size...</option>
+                            <option value="stuffed">Stuffed Crust</option>
+                            <option value="thin">Thin Crust</option>
+                            <option value="cheese">Cheese Crust</option>
+                            <option value="flat">Flat Bread Crust</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
     
 

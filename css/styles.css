@@ -49,14 +49,6 @@ body > section > nav > a {
     color: var(--white);
     margin-right: 3rem;
     transition: all ease-in-out .6s;
-    /* border: 1px solid white;
-    border-radius: 20px; */
-}
-
-#navbarNavAltMarkup > div > a:hover {
-    /* border: 1px solid var(--white); */
-    /* padding: .1rem .6rem; */
-    /* border-radius: 20px; */
 }
 
 
@@ -156,19 +148,19 @@ body > section > nav > a {
 .order {
     min-height: 100vh;
     margin-top: 1rem;
-    /* background-color: crimson; */
     display: flex;
 }
 
 .order-right {
     flex: 1;
-    background-color: cyan;
+    /* background-color: cyan; */
 }
 
 .order-left {
-    background-color: darkblue;
     flex: 1.5;
-    /* clip-path: polygon(0 0, 68% 0, 40% 100%, 0% 100%) */
     clip-path: polygon(0 0, 91% 0, 70% 100%, 0% 100%);
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right bottom, rgba(15, 15, 15, 0.707), rgba(3, 3, 3, 0.808)), url(https://images.unsplash.com/photo-1576458088443-04a19bb13da6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
 }
 
