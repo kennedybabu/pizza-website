@@ -1,7 +1,19 @@
+:root {
+    --red: #E63946;
+    --white: #F1FAEE;
+    --powder-blue: #a8dadc;
+    --celadon-blue: #457B9D;
+    --perusian-blue: #1D3557;
+    --black: #020202;
+
+}
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
 body {
     font-size: 18px;
 }
@@ -9,9 +21,10 @@ body {
 .hero {
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.836)), url(https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 nav {
@@ -20,18 +33,34 @@ nav {
 
 body > section > nav > a {
     margin-left: 3rem;
-    color: black;    
+    color: white; 
+    z-index: 1000;   
 }
 
 
 #navbarNavAltMarkup > div > a {
-    color: black;
+    color: white;
     margin-right: 3rem;
     transition: all ease-in-out .5s;
 }
 
 #navbarNavAltMarkup > div > a:hover {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 20px;
+}
+
+
+.overlay {
+    position: absolute;
+
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    /* background-color: rgba(255, 255, 0, 0.767); */
+    height: 100vh;
 }
 
