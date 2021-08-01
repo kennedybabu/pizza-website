@@ -44,6 +44,9 @@ body > section > nav > a {
     font-size: 2.8rem;  
 }
 
+body > section.container.hero > nav > a {
+    font-size: 2rem;
+}
 
 #navbarNavAltMarkup > div > a {
     color: var(--white);
@@ -153,14 +156,27 @@ body > section > nav > a {
 
 .order-right {
     flex: 1;
-    /* background-color: cyan; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .order-left {
     flex: 1.5;
-    clip-path: polygon(0 0, 91% 0, 70% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 91% 0, 70% 100%, 0% 100%); */
+    clip-path: polygon(100% 0, 67% 51%, 100% 100%, 0 100%, 0 0);
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right bottom, rgba(15, 15, 15, 0.707), rgba(3, 3, 3, 0.808)), url(https://images.unsplash.com/photo-1576458088443-04a19bb13da6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+}
+
+.order-btn {
+    margin-top: 1rem;
+}
+
+button {
+    border: none;
+    padding: .6rem 1rem;
+    background-color: var(--red);
 }
 

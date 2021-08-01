@@ -88,30 +88,50 @@
                 <form action="#" id="form">
                     <div class="col">
                         <label for="type">Pizza Type</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <select name="type" class="custom-select mr-sm-2" id="type">
                             <option selected>Choose Pizza Type...</option>
-                            <option value="large">Pepporoni Pizza</option>
-                            <option value="medium">Hawaiian Pizza</option>
-                            <option value="small">Margherita Pizza</option>
-                            <option value="small">BBQ Chicken</option>
+                            <option value="pepporoni">Pepporoni Pizza</option>
+                            <option value="hawaiian">Hawaiian Pizza</option>
+                            <option value="margherita">Margherita Pizza</option>
+                            <option value="bbq">BBQ Chicken</option>
                         </select>
 
-                        <label for="type">Pizza Size</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <label for="size">Pizza Size</label>
+                        <select name="size" class="custom-select mr-sm-2" id="size">
                             <option selected>Choose size...</option>
                             <option value="large">large</option>
                             <option value="medium">Medium</option>
                             <option value="small">Small</option>
                         </select>
 
-                        <label for="type">Crust</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <label for="crust">Crust</label>
+                        <select class="custom-select mr-sm-2" id="crust">
                             <option selected>Choose size...</option>
                             <option value="stuffed">Stuffed Crust</option>
                             <option value="thin">Thin Crust</option>
                             <option value="cheese">Cheese Crust</option>
                             <option value="flat">Flat Bread Crust</option>
                         </select>
+
+                        <label for="topping">Toppings</label>
+                        <select class="custom-select mr-sm-2" id="topping">
+                            <option selected>Choose size...</option>
+                            <option value="pepporoni">Pepporoni</option>
+                            <option value="mushrooms">Mushrooms</option>
+                            <option value="onions">Onions</option>
+                            <option value="sausage">Sausage</option>
+                            <option value="extra-cheese">Extra Cheese</option>
+                            <option value="olives">Black Olives</option>
+                            <option value="peppers">Green Peppers</option>
+                        </select><br>
+
+                        <label for="numbers">Pieces</label><br>
+                        <input type="number" value="0" min="0" max="10000" id="numbers"/> <br>
+
+                        <div class="order-btn"> 
+                            <button id="submit"type="submit">ORDER</button>
+                        </div>
+
                     </div>
                 </form>
             </div>
