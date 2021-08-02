@@ -10,7 +10,7 @@
     --celadon-blue: #457B9D;
     --perusian-blue: #1D3557;
     --black: #020202;
-
+    --yellow: rgb(252, 163, 17);
 }
 
 * {
@@ -50,8 +50,7 @@ nav {
     color: var(--white);
     left: 50%;
     top: 50%;
-    position: absolute;
-    
+    position: absolute;    
 
     transform: translate(-50%, -50%);
 }
@@ -59,6 +58,7 @@ nav {
 body > section.container.hero > div > h3 {
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
+    color: var(--yellow);
 }
 
 
@@ -82,7 +82,6 @@ body > section.container.hero > nav > a {
 
 .overlay {
     position: absolute;
-
 }
 
 .left {
@@ -90,7 +89,6 @@ body > section.container.hero > nav > a {
     left: 0;
     bottom: 0;
     width: 50%;
-    /* background-color: rgba(255, 255, 0, 0.767); */
     height: 100vh;
 }
 
@@ -106,7 +104,7 @@ body > section.container.hero > nav > a {
 }
 
 .offer-heading h3{
-    text-decoration: underline var(--red);
+    text-decoration: underline var(--yellow);
 }
 
 .offers {
@@ -117,7 +115,7 @@ body > section.container.hero > nav > a {
     height: 400px;
     margin-right: 1rem;
     text-align: center;
-    min-width: 269px;
+    max-width: 269px;
     padding: 0;
     transition: transform  ease .2s;
 }
@@ -154,7 +152,6 @@ body > section.container.hero > nav > a {
     background-position: center;
     background-size: cover;
     border-radius: 3px 3px 0 0;
-
 }
 
 .one .top {
@@ -188,26 +185,89 @@ body > section.container.hero > nav > a {
 
 .order-left {
     flex: 1.5;
-    /* clip-path: polygon(0 0, 91% 0, 70% 100%, 0% 100%); */
     clip-path: polygon(100% 0, 67% 51%, 100% 100%, 0 100%, 0 0);
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to right bottom, rgba(107, 107, 107, 0.707), rgba(3, 3, 3, 0.863)), url(https://images.unsplash.com/photo-1528985029559-dc27a8d7737d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1825&q=80);
+    background-image: linear-gradient(to right bottom, rgba(107, 107, 107, 0.707), rgba(252, 162, 17, 0.582)), url(https://images.unsplash.com/photo-1528985029559-dc27a8d7737d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1825&q=80);
 }
 
 .order-btn {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 button {
     border: none;
-    padding: .6rem 1rem;
-    background-color: var(--red);
+    padding: .5rem 1.6rem;
+    background-color: var(--yellow);
+    border-radius: 30px;
+}
+
+button:active,
+button:focus {
+    outline: none;
 }
 
 .about {
     min-height: 100vh;
-    background-image: url();
-    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0.911)), url(https://images.unsplash.com/photo-1535852843010-69202d34cc6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80); 
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.about-container {
+    min-width: 100%;
+}
+
+
+.chefs-comments {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.interior-left {
+    background-image: url(https://images.unsplash.com/photo-1548230676-6983ce26146a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80);
+    background-size: cover;
+    background-position: center;background-image: url(https://images.unsplash.com/photo-1488324346298-5ad3d8f96d0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1883&q=80);
+    background-size: cover;
+}
+
+.interior-right {
+    background-image: url(https://images.unsplash.com/photo-1574936145840-28808d77a0b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1875&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.comment {
+    background-color: var(--white);
+    padding: 1rem;    
+}
+
+.comment h4 {
+    text-decoration: 2px solid underline var(--yellow);    
+}
+
+.comment p {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.icons {
+    width: 80%;
+    height: 3rem;
+}
+
+footer {
+    height: 30vh;
+    background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.704), rgba(0, 0, 0, 0.641)), url(https://images.unsplash.com/photo-1463936575829-25148e1db1b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1690&q=80);
+    margin-top: 1rem;
+    background-position: bottom;
+}

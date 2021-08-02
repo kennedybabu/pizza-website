@@ -1,47 +1,53 @@
-let form = document.getElementById("form")
 
 //business logic
-function Pizza(type, size, crust, topping, pieces) {
+function Pizza(type, size, crust, topping) {
     this.type = type,
     this.size = size,
     this.crust = crust,
     this.topping = topping
-    this.pieces = pieces
-}
-
-Pizza.prototype.getTotal = function(pizzaType, pizzaSize){
-    if(pizzaType == "pepporoni"){
-        return pizzaCost = pepporoniPizza[pizzaSize]
-    }
 }
 
 //user interface logic
 $(document).ready(function(){
 
     $("#form").submit(function(event){
-        event.preventDefault()
-
-        let pepporoniPizza = {
-            "large" : 1500,
-            "medium" : 1200,
-            "small" : 1000
-        }
-
-        let pizzaCost = 0    
-
+        event.preventDefault()        
 
         //get user input
         let pizzaType = $("select#type").val()
         let pizzaSize = $("select#size").val()
         let pizzaCrust = $("select#crust").val()
         let pizzaTopping = $("select#topping").val()
-        let pizzaPieces = $("input#numbers").val()   
+        // let pizzaPieces = $("input#numbers").val()         
+
+        let orderedPizza = new Pizza(pizzaType, pizzaSize, pizzaCrust, pizzaTopping)       
+       
+        let keySize = orderedPizza.size
+
+
+        //pizza price 
+        let pizzaPrices = {
+            large: 2000,
+            medium : 1500,
+            small : 1000
+        } 
+
+        let big = orderedPizza.size
+        let plainPizzaPrice = pizzaPrices[big]
+
+        //crust price
+        let crustPrize = plainPizzaPrice / 10
         
+        //toppings price
 
-        let orderedPizza = new Pizza(pizzaType, pizzaSize, pizzaCrust, pizzaTopping)
+        let toppingPrice = plainPizzaPrice * .6
 
-               
-        console.log(orderedPizza.getTotal())
+        console.log(toppingPrice)
+
+        console.log(plainPizzaPrice + crustPrize + toppingPrice)    
+       
+       
+      
     })
 
 })
