@@ -40,8 +40,6 @@ body {
 
 nav {
     background-color: transparent;
-    height: 3rem;
-    
 }
 
 
@@ -57,7 +55,7 @@ nav {
 
 body > section.container.hero > div > h3 {
     font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--yellow);
 }
 
@@ -69,8 +67,17 @@ body > section > nav > a {
     font-size: 2.8rem;  
 }
 
+body > section > nav > a:hover {
+    color: var(--white);    
+}
+
 body > section.container.hero > nav > a {
     font-size: 2rem;
+    transition: all ease-in-out .9s;
+}
+
+.nav-item:hover {
+    text-decoration: 2px underline var(--white);
 }
 
 #navbarNavAltMarkup > div > a {
@@ -270,4 +277,13 @@ footer {
     background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.704), rgba(0, 0, 0, 0.641)), url(https://images.unsplash.com/photo-1463936575829-25148e1db1b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1690&q=80);
     margin-top: 1rem;
     background-position: bottom;
+}
+
+#numbers {
+    text-align: center;
+}
+
+.output {
+    min-height: 2rem;
+    margin-top: 1rem;
 }

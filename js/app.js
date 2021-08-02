@@ -18,12 +18,12 @@ $(document).ready(function(){
         let pizzaSize = $("select#size").val()
         let pizzaCrust = $("select#crust").val()
         let pizzaTopping = $("select#topping").val()
-        // let pizzaPieces = $("input#numbers").val()         
+        let orderedPieces = $("input#numbers").val()
+        let toPickUp = $("input#pick-up").val()
 
-        let orderedPizza = new Pizza(pizzaType, pizzaSize, pizzaCrust, pizzaTopping)       
+
+        let orderedPizza = new Pizza(pizzaType, pizzaSize, pizzaCrust, pizzaTopping)   
        
-        let keySize = orderedPizza.size
-
 
         //pizza price 
         let pizzaPrices = {
@@ -39,14 +39,29 @@ $(document).ready(function(){
         let crustPrize = plainPizzaPrice / 10
         
         //toppings price
+        let toppingPrice = plainPizzaPrice * .3
 
-        let toppingPrice = plainPizzaPrice * .6
+        //total cost of pizza
+        let pizzaCost = plainPizzaPrice + crustPrize + toppingPrice
 
-        console.log(toppingPrice)
+        console.log(orderedPieces)
 
-        console.log(plainPizzaPrice + crustPrize + toppingPrice)    
-       
-       
+        console.log(pizzaCost * parseInt(orderedPieces))  
+
+        let deliveryFee = 350
+        
+        function askDelivery(){
+            if($(toPickUp).is("checked")) {
+                document.getElementById("pizza-output").innerHTML = `hello, you are paying Ksh.${pizzaCost}, your order will be ready in half an hour. Thank You!`
+                return
+            } else {
+                let dropLocation = prompt("Enter drop location...")
+                pizzaCost = plainPizzaPrice + crustPrize + toppingPrice + deliveryFee
+                document.getElementById("pizza-output").innerHTML = `hello, your total amount is Ksh.${pizzaCost}, your delivery will be dropped off at ${dropLocation}. You'll get a call from our delivery guys.Thank You!`
+            }
+        }        
+
+        askDelivery()      
       
     })
 
