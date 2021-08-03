@@ -51,15 +51,15 @@ $(document).ready(function(){
         let deliveryFee = 350
         
         function askDelivery(){
-            if($(toPickUp).is("checked")) {
+            if($("#toPickUp").is("checked", true)) {
                 document.getElementById("pizza-output").innerHTML = `hello, you are paying Ksh.${pizzaCost}, your order will be ready in half an hour. Thank You!`
                 return
-            } else {
+            } else{
                 let dropLocation = prompt("Enter drop location...")
                 pizzaCost = plainPizzaPrice + crustPrize + toppingPrice + deliveryFee
                 document.getElementById("pizza-output").innerHTML = `hello, your total amount is Ksh.${pizzaCost}, your delivery will be dropped off at ${dropLocation}. You'll get a call from our delivery guys.Thank You!`
             }
-        }        
+        }      
 
         askDelivery()      
       
