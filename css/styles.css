@@ -287,3 +287,40 @@ footer {
     min-height: 2rem;
     margin-top: 1rem;
 }
+
+@media only screen and (max-width: 1310px) {
+    .card {
+        height: 350px;
+        min-width: 269px;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    .comments p {
+        font-size: 14px;
+    }
+
+    #about-us > div > div.chefs-comments.mx-auto > div.col-6.comment > p {
+        font-size: 11px;
+    }   
+    
+    .chefs-comments {
+        flex-direction: column;
+    }  
+    
+    
+
+    #about-us > div > div.chefs-comments.mx-auto > div.col.interior-left,
+    #about-us > div > div.chefs-comments.mx-auto > div.col.interior-right {        
+        display: none;
+    }
+
+    #about-us > div > div.chefs-comments.mx-auto > div.col-6.comment {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    /* #about-us > div > div.chefs-comments.mx-auto > div.col {        
+        display: none;
+    } */
+}
