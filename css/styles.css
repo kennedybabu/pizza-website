@@ -281,6 +281,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 #numbers {
@@ -294,6 +295,13 @@ footer {
 
 .footer-copyright {
     margin-top: -3rem;
+}
+
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1310px) {
