@@ -41,14 +41,9 @@ $(document).ready(function(){
         let toppingPrice = plainPizzaPrice * .3
 
         //total cost of pizza
-        let pizzaCost = plainPizzaPrice + crustPrize + toppingPrice
+        let pizzaCost = plainPizzaPrice + crustPrize + toppingPrice        
 
-        console.log(orderedPieces)
-
-        console.log(pizzaCost * parseInt(orderedPieces))  
-
-        let deliveryFee = 350
-                  
+        let deliveryFee = 350                 
 
         function askDelivery(){
             if($("#pick-up").is("checked", true)){
