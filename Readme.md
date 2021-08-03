@@ -18,6 +18,5 @@ Jquery
 
 Kennedy Babu
 
-
 ## Licence
 [MIT](https://choosealicense.com/licenses/mit/)
